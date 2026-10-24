@@ -15,7 +15,7 @@ class JenkinsCiCdApplicationTests {
 
 	@Test
 	public void testGreetingsEndpoint() throws Exception {
-		String name = "shiv kumar raut";
+		String name = "shiv kumar raut dada";
 
 		mockMvc.perform(MockMvcRequestBuilders.get("/greetings/{name}", name))
 				.andExpect(MockMvcResultMatchers.status().isOk())
