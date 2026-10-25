@@ -15,11 +15,11 @@ class JenkinsCiCdApplicationTests {
 
 	@Test
 	public void testGreetingsEndpoint() throws Exception {
-		String name = "shiv kumar raut dada pada";
+		String name = "shiv kumar raut dada";
 
 		mockMvc.perform(MockMvcRequestBuilders.get("/greetings/{name}", name))
 				.andExpect(MockMvcResultMatchers.status().isOk())
-				.andExpect(MockMvcResultMatchers.content().string("Hello " + name + " Congratulations you have successfully completed Jenkins CI/CD demo !"));
+				.andExpect(MockMvcResultMatchers.content().string("Hello " + name.split(" ")[0] + " Congratulations you have successfully completed Jenkins CI/CD demo !"));
 	}
 
 }
