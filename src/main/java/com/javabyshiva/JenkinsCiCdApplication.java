@@ -17,6 +17,7 @@ public class JenkinsCiCdApplication {
         // kumar
        name= name.split(" ")[0];
         return "Hello " + name + " Congratulations you have successfully completed Jenkins CI/CD demo !";
+
     }
 
     public static void main(String[] args) {
